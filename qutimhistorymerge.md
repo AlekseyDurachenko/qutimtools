@@ -1,4 +1,4 @@
-# (English) qutimhistorymerge
+# (English) qutimhistorymerge.py
 This script imports the qutIM message history.
 
 ## Changelog
@@ -22,7 +22,7 @@ optional arguments:
 ```
 
 
-# (Русский) qutimhistorymerge
+# (Русский) qutimhistorymerge.py
 Данный скрипт импортирует историю сообщений qutIM.
 
 ## История изменений

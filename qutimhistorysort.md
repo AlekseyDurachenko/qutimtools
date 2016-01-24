@@ -1,4 +1,4 @@
-# (English) qutimhistorysort
+# (English) qutimhistorysort.py
 This script sorts the qutIM message history.
 
 ## Changelog
@@ -21,7 +21,7 @@ optional arguments:
 ```
 
 
-# (Русский) qutimhistorysort
+# (Русский) qutimhistorysort.py
 Данный скрипт сортирует историю сообщений qutIM.
 
 ## История изменений
