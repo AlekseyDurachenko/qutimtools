@@ -320,7 +320,7 @@ def event_list_to_messages(event_list, verbose=False):
 
 
 def jid_escaped(jid):
-    return jid.replace("@", "%0040").replace("_", "%005f")
+    return jid.replace("@", "%0040").replace("_", "%005f").replace("-", "%002d")
 
 
 def save_qutim_other_history(dst_dir, userid, contact, messages, verbose=False):

@@ -141,7 +141,7 @@ def save_qutim_icq_history(dst_dir, uin, contact, messages, verbose=False):
 
 
 def jid_escaped(jid):
-    return jid.replace("@", "%0040").replace("_", "%005f")
+    return jid.replace("@", "%0040").replace("_", "%005f").replace("-", "%002d")
 
 
 def save_qutim_jabber_history(dst_dir, jid, contact, messages, verbose=False):
