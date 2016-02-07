@@ -68,6 +68,13 @@ def get_vk_accounts(src_dir):
             jid.startswith("vk")]
 
 
+def get_sms_accounts(src_dir):
+    return [jid
+            for jid in os.listdir(src_dir)
+            if os.path.isdir(os.path.join(src_dir, jid)) and
+            jid.startswith("sms")]
+
+
 def get_json_files(dir):
     return [name
             for name in os.listdir(dir)
@@ -99,6 +106,7 @@ def main():
     accounts.extend(get_jabber_accounts(os.path.join(src_dir, "history")))
     accounts.extend(get_skype_accounts(os.path.join(src_dir, "history")))
     accounts.extend(get_vk_accounts(os.path.join(src_dir, "history")))
+    accounts.extend(get_sms_accounts(os.path.join(src_dir, "history")))
 
     for account in accounts:
         src_prefix = os.path.join(src_dir, "history", account)
